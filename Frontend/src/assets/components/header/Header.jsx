@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return <>
@@ -11,12 +12,12 @@ const Header = () => {
                 </div>
                 <h3 className='text-3xl font-bold text-white'>Chats</h3>
             </div>
-            <div className='h-9 w-9 bg-red-600 rounded-full flex items-center justify-center buttonShadow'>
-                <h2 className='fa-solid fa-plus text-2xl text-white'></h2>
+            <div className='h-9 w-9 bg-red-600 rounded-full flex items-center justify-center buttonShadow '>
+                <Link to="/logout"><h2 className='fa-solid fa-right-from-bracket text-2xl text-white cursor-pointer'></h2></Link>
             </div>
         </div>
         
     </>
 }
 
-export default Header
+export default Header;
